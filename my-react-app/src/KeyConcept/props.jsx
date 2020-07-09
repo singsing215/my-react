@@ -3,7 +3,7 @@ import React from "react"
 export default class props extends React.Component{
     render(){
         return(
-            <div>
+            <div class="container">
                 props组件的复用性<br/>
                 用props传递数据<br/>
                 Nav.jsx,在App引用<br/>

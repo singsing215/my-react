@@ -41,7 +41,7 @@ export default class state extends React.Component {
     render() {
         let shouView = this.state.login ? "true" : "false"
         return (
-            <div>
+            <div class="container">
                 StateComponent <br />
                 组件的state <br />
                 组件的状态=state <br />
