@@ -4,7 +4,8 @@ export default class lifecycle extends React.Component{
     render(){
         return(
             <div>
-                lifecycle
+                React生命周期函数 <br/>
+                
             </div>
         )
     }

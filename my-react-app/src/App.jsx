@@ -19,12 +19,15 @@ import form2 from "./KeyConcept/form2";
 import propsTypee from "./KeyConcept/propesTypee";
 
 
-
+const nav1 = ["1","2","3"]//多个导航，App.js传送两个nav，在Nav.jsx接收两个nav
+const nav2 = ["4","5","6"]
 
 function App() {
   return (
     <div className="App">
       <Router>
+        {/* <Nav nav={ nav1 } title="主导航"/>
+        <Nav nav={ nav2 } title="副导航"/> */}
         <Nav />
         <Route path="/render" component={render}></Route>
         <Route path="/component" component={component}></Route>
