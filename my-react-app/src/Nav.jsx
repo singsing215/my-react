@@ -33,7 +33,7 @@ export default class Nav extends React.Component {
                       <div class="navbar-nav">
                         <a class="nav-item nav-link" ><NavLink exact to='/setstate'>setstate</NavLink></a>
                       </div>
-                      <div class="navbar-nav">
+                      <div class="navbar-nav"> 
                         <a class="nav-item nav-link" ><NavLink exact to='/if'>if</NavLink></a>
                       </div>
                       <div class="navbar-nav">
