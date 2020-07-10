@@ -14,11 +14,12 @@ import parent from "./KeyConcept/状态提升components/parent";
 import child1 from "./KeyConcept/状态提升components/child1";
 import child2 from "./KeyConcept/状态提升components/child2";
 import compose from "./KeyConcept/compose";
+import Compose from "./KeyConcept/compose";
 import form1 from "./KeyConcept/form1";
 import refs from "./KeyConcept/refs&dom";
 import form2 from "./KeyConcept/form2";
 import propsTypee from "./KeyConcept/propesTypee";
-
+import PropsTypee from "./KeyConcept/propesTypee";
 
 
 export default class App extends React.Component {
@@ -31,15 +32,15 @@ export default class App extends React.Component {
     }
   }
 
-  parent2child=()=>{
+  parent2child = () => {
     this.setState({
-      title:"父props传子"
+      title: "父props传子"
     })
   }
 
-  child2parent=(data)=>{
+  child2parent = (data) => {
     this.setState({
-      title:data  //data   //"props已修改"
+      title: data  //data   //"props已修改"
     })
   }
 
@@ -77,6 +78,14 @@ export default class App extends React.Component {
         {/* <Lifecycle title={this.state.title} child2parent={this.child2parent}/>
         props修改：在父App.jsx修改props,传title给lifecycle.jsx组件(父传子) <br/>
         <button onClick={this.parent2child}>父传子修改props</button> */}
+
+        {/* 组合 */}
+        {/* <Compose>
+          <div>组合children</div>
+        </Compose> */}
+
+        {/* PropTypes类型检查 */}
+        <PropsTypee title="来自App的title" />
       </div>
     );
   }

@@ -34,9 +34,9 @@ export default class lifecycle extends React.Component {
 
     increase = () => {
         this.setState({
-            count: this.state.count += 1
+            count: this.setState().count += 1
         })
-        console.log(this.state.count)
+        console.log(this.setState().count)
     }
 
     clickHandel=()=>{
@@ -65,7 +65,7 @@ export default class lifecycle extends React.Component {
                 子传父：事件回传方案 <br/>
                 (注释App.jsx倒数两个按钮)<br/>
                 <button onClick={this.clickHandel}>子传父修改props</button> <br/>
-                <img class="img-responsive" src={png} width={600}></img>
+                <img class="img-responsive" src={png} width={600} alt={"alt"}></img>
             </div>
         )
     }
