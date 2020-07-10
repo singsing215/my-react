@@ -15,7 +15,7 @@ export default class form2 extends React.Component{
 
     render(){
         return(
-            <div class="container">
+            <div className="container">
                 1. 表单，非受控组件 <br/>
                 2. 多个input可用非受控组件 <br/>
                 3. console.log(this.username.current.value) <br/>

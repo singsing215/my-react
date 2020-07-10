@@ -36,7 +36,7 @@ export default class setstate extends React.Component {
 
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 1. setState会引起试图重绘 <br />
                 2. setState在可控情况下异步，非可控同步。具体看state内部执行过程，涉及生命周期函数。<br />
                 3. 默认获取上一次的值（异步） <br/>

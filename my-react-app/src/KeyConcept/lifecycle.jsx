@@ -46,7 +46,7 @@ export default class lifecycle extends React.Component {
     render() {
         const {count} = this.state
         return (
-            <div class="container">
+            <div className="container">
                 React生命周期函数 <br />
                 初始化props，初始化state <br />
                 componentWillMount(): 组件render()之前执行 <br/>
@@ -65,7 +65,7 @@ export default class lifecycle extends React.Component {
                 子传父：事件回传方案 <br/>
                 (注释App.jsx倒数两个按钮)<br/>
                 <button onClick={this.clickHandel}>子传父修改props</button> <br/>
-                <img class="img-responsive" src={png} width={600} alt={"alt"}></img>
+                <img className="img-responsive" src={png} width={600} alt={"alt"}></img>
             </div>
         )
     }

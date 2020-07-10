@@ -17,7 +17,7 @@ export default class refs extends React.Component{
 
     render(){
         return(
-            <div class="container">
+            <div className="container">
                 1. Refs和DOM <br/>
                 2. DOM可操作时间，音频视频播放时长 <br/>
                 3. 日常不推荐操作DOM <br/>

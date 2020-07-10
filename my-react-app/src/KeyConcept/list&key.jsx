@@ -41,7 +41,7 @@ export default class listkey extends React.Component {
 
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 1. 列表渲染，key <br />
                 2. 复杂数组渲染, 复用列表渲染 <br />
                 3. push()返回数组长度 <br />

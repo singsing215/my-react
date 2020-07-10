@@ -26,7 +26,7 @@ export default class iff extends React.Component {
         let showView = this.state.login ? <div>hello,kenny</div> : <div>请登录</div>
 
         return (
-            <div class="container">
+            <div className="container">
                 条件渲染 <br />
                 1. 对视图进行切换 （登录前后显示不同）<br />
                 let showView = this.state.login ? 登陆后 : 登录前 <br/>

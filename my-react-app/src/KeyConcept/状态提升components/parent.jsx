@@ -19,7 +19,7 @@ export default class parent extends React.Component{
 
     render(){
         return(
-            <div class="container">
+            <div className="container">
                 1. 状态提升parent <br/>
                 2. 组件间数据传递 <br/>
                 3. 使用受控组件 <br/>

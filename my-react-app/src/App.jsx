@@ -6,7 +6,6 @@ import component from "./KeyConcept/component";
 import props from "./KeyConcept/props";
 import state from "./KeyConcept/state";
 import lifecycle from "./KeyConcept/lifecycle";
-import Lifecycle from "./KeyConcept/lifecycle"; //props修改：在父App.jsx修改props,传title给lifecycle.jsx组件
 import setstate from "./KeyConcept/setState";
 import iff from "./KeyConcept/if";
 import listkey from "./KeyConcept/list&key";
@@ -14,12 +13,13 @@ import parent from "./KeyConcept/状态提升components/parent";
 import child1 from "./KeyConcept/状态提升components/child1";
 import child2 from "./KeyConcept/状态提升components/child2";
 import compose from "./KeyConcept/compose";
-import Compose from "./KeyConcept/compose";
 import form1 from "./KeyConcept/form1";
 import refs from "./KeyConcept/refs&dom";
 import form2 from "./KeyConcept/form2";
 import propsTypee from "./KeyConcept/propesTypee";
-import PropsTypee from "./KeyConcept/propesTypee";
+// import Compose from "./KeyConcept/compose";
+// import Lifecycle from "./KeyConcept/lifecycle"; //props修改：在父App.jsx修改props,传title给lifecycle.jsx组件
+// import PropsTypee from "./KeyConcept/propesTypee";
 
 
 export default class App extends React.Component {
@@ -47,8 +47,8 @@ export default class App extends React.Component {
   render() {
 
     // //props
-    const nav1 = ["1", "2", "3"]//多个导航，App.js传送两个nav，在Nav.jsx接收两个nav
-    const nav2 = ["4", "5", "6"]
+    // const nav1 = ["1", "2", "3"]//多个导航，App.js传送两个nav，在Nav.jsx接收两个nav
+    // const nav2 = ["4", "5", "6"]
 
     return (
       <div className="App">
@@ -85,7 +85,7 @@ export default class App extends React.Component {
         </Compose> */}
 
         {/* PropTypes类型检查 */}
-        <PropsTypee title="来自App的title" />
+        {/* <PropsTypee title="来自App的title" /> */}
       </div>
     );
   }

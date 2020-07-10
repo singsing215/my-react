@@ -21,7 +21,7 @@ export default class form1 extends React.Component {
 
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 1. 表单，受控组件 <br />
                 2. form onSubmit 阻止跳转e.preventDefault()<br />
                 3. input onChange <br />
