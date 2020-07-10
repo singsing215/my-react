@@ -61,7 +61,9 @@ export default class lifecycle extends React.Component {
                 {count} <br/>
                 <button onClick={this.increase}>修改state</button> <br/>
                 {this.props.title} <br/>
-                props修改：(子传父传参) (注释App.jsx,倒数两个按钮)<br/>
+                父传子：props <br/>
+                子传父：事件回传方案 <br/>
+                (注释App.jsx倒数两个按钮)<br/>
                 <button onClick={this.clickHandel}>子传父修改props</button> <br/>
                 <img class="img-responsive" src={png} width={600}></img>
             </div>
