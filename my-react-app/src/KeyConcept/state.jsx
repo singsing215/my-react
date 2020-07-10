@@ -11,13 +11,13 @@ export default class state extends React.Component {
 
     increment() {
         this.setState({
-            count: this.setState().count += 1
+            count: this.state.count += 1
         })
     }
 
     decrement = () => {
         this.setState({
-            count: this.setState().count -= 1
+            count: this.state.count -= 1
         })
     }
 
@@ -27,13 +27,13 @@ export default class state extends React.Component {
 
     login = () =>{
         this.setState({
-            login: this.setState().login = true
+            login: this.state.login = true
         })
     }
 
     logout = () =>{
         this.setState({
-            login: this.setState().login = false
+            login: this.state.login = false
         })
     }
 
