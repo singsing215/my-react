@@ -9,8 +9,8 @@ export default class lifecycle extends React.Component {
         }
     }
 
-    componentWillMount(){
-        console.log("componentWillMount")
+    UNSAFE_componentWillMount(){
+        console.log("UNSAFE_componentWillMount")
     }
     componentDidMount(){
         console.log("componentDidMount")
@@ -19,14 +19,14 @@ export default class lifecycle extends React.Component {
         console.log("shouldComponentUpdate")
         return true
     }
-    componentWillUpdate(){
-        console.log("componentWillUpdate")
+    UNSAFE_componentWillUpdate(){
+        console.log("UNSAFE_componentWillUpdate")
     }
     componentDidUpdate(){
         console.log("componentDidUpdate")
     }
-    componentWillReceiveProps(){
-        console.log("componentWillReceiveProps")
+    UNSAFE_componentWillReceiveProps(){
+        console.log("UNSAFE_componentWillReceiveProps")
     }
     componentWillUnmount(){
         console.log("componentWillUnmount")
@@ -47,17 +47,17 @@ export default class lifecycle extends React.Component {
         const {count} = this.state
         return (
             <div className="container">
-                React生命周期函数 <br />
-                初始化props，初始化state <br />
-                componentWillMount(): 组件render()之前执行 <br/>
-                渲染函数render() <br/>
-                componentDidMount(): 组件render()之后执行 <br/>
-                shouldComponentUpdate(): 返回true和false，true允许改变 return true<br/>
-                componentWillUpdate(): 数据改变之前执行(state,props) <br/>
-                componentDidUpdate(): 数据修改完成(state,props) <br/>
-                componentWillReceiveProps(): props改变之前 <br/>
-                componentWillUnmount()：组件卸载前执行 <br/>
-                state修改：shouldComponentUpdate return true  <br/>
+                1. React生命周期函数 <br />
+                2. 初始化props，初始化state <br />
+                3. UNSAFE_componentWillMount(): 组件render()之前执行 <br/>
+                4. 渲染函数render() <br/>
+                5. componentDidMount(): 组件render()之后执行 <br/>
+                6. shouldComponentUpdate(): 返回true和false，true允许改变 return true<br/>
+                7. UNSAFE_componentWillUpdate(): 数据改变之前执行(state,props) <br/>
+                8. componentDidUpdate(): 数据修改完成(state,props) <br/>
+                9. UNSAFE_componentWillReceiveProps(): props改变之前 <br/>
+                10. componentWillUnmount()：组件卸载前执行 <br/>
+                11. state修改：shouldComponentUpdate return true  <br/>
                 {count} <br/>
                 <button onClick={this.increase}>修改state</button> <br/>
                 {this.props.title} <br/>
