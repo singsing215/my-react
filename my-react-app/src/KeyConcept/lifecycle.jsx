@@ -34,9 +34,9 @@ export default class lifecycle extends React.Component {
 
     increase = () => {
         this.setState({
-            count: this.setState().count += 1
+            count: this.state.count += 1
         })
-        console.log(this.setState().count)
+        console.log(this.state.count)
     }
 
     clickHandel=()=>{

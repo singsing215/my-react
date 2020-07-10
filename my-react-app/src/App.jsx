@@ -17,6 +17,8 @@ import form1 from "./KeyConcept/form1";
 import refs from "./KeyConcept/refs&dom";
 import form2 from "./KeyConcept/form2";
 import propsTypee from "./KeyConcept/propesTypee";
+import get from "./Fetch/get";
+import post from "./Fetch/post";
 // import Compose from "./KeyConcept/compose";
 // import Lifecycle from "./KeyConcept/lifecycle"; //props修改：在父App.jsx修改props,传title给lifecycle.jsx组件
 // import PropsTypee from "./KeyConcept/propesTypee";
@@ -73,6 +75,8 @@ export default class App extends React.Component {
           <Route path="/refs" component={refs}></Route>
           <Route path="/form2" component={form2}></Route>
           <Route path="/propsTypee" component={propsTypee}></Route>
+          <Route path="/get" component={get}></Route>
+          <Route path="/post" component={post}></Route>
         </Router>
         {/* 父传子 */}
         {/* <Lifecycle title={this.state.title} child2parent={this.child2parent}/>

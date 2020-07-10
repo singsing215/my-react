@@ -77,6 +77,12 @@ export default  class Nav extends React.Component {
                 <div  className="navbar-nav">
                   <NavLink exact to='/propsTypee'>propsType</NavLink>
                 </div>
+                <div  className="navbar-nav">
+                  <NavLink exact to='/get'>get</NavLink>
+                </div>
+                <div  className="navbar-nav">
+                  <NavLink exact to='/post'>post</NavLink>
+                </div>
               </div>
             </nav>
           </div>
