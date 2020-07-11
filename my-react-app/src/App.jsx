@@ -7,6 +7,7 @@ import props from "./KeyConcept/props";
 import state from "./KeyConcept/state";
 import lifecycle from "./KeyConcept/lifecycle";
 import setstate from "./KeyConcept/setState";
+import setState2 from "./KeyConcept/setState2";
 import iff from "./KeyConcept/if";
 import listkey from "./KeyConcept/list&key";
 import parent from "./KeyConcept/状态提升components/parent";
@@ -19,6 +20,24 @@ import form2 from "./KeyConcept/form2";
 import propsTypee from "./KeyConcept/propesTypee";
 import get from "./Fetch/get";
 import post from "./Fetch/post";
+import MineDemo from "./KeyConcept/withrouter";
+import prompt from "./KeyConcept/prompt";
+import useState from "./Hook/useState";
+import useEffect from "./Hook/useEffect";
+import useState2 from "./Hook/useState2";
+import useEffect2 from "./Hook/useEffect2";
+import TodoForm from "./Hook/TodoForm";
+import TodoList from "./Hook/TodoList";
+import useEffectOp from "./Hook/useEffectOp";
+import HookGet from "./Hook/HookGet";
+import HookGet2 from "./Hook/HookGet2";
+import ReactMemo from "./Hook/ReactMemo";
+import MemoChild from "./Hook/MemoChild";
+import useCallback from "./Hook/useCallback";
+import useReducer from "./Hook/useReducer";
+import useContextM from "./Hook/useContextM";
+import useContextC from "./Hook/useContextC";
+import contextType from "./Hook/contextType";
 // import Compose from "./KeyConcept/compose";
 // import Lifecycle from "./KeyConcept/lifecycle"; //props修改：在父App.jsx修改props,传title给lifecycle.jsx组件
 // import PropsTypee from "./KeyConcept/propesTypee";
@@ -77,6 +96,25 @@ export default class App extends React.Component {
           <Route path="/propsTypee" component={propsTypee}></Route>
           <Route path="/get" component={get}></Route>
           <Route path="/post" component={post}></Route>
+          <Route path="/withRouter" component={MineDemo}></Route>
+          <Route path="/prompt" component={prompt}></Route>
+          <Route path="/useState" component={useState}></Route>
+          <Route path="/useEffect" component={useEffect}></Route>
+          <Route path="/useState2" component={useState2}></Route>
+          <Route path="/useEffect2" component={useEffect2}></Route>
+          <Route path="/TodoForm" component={TodoForm}></Route>
+          <Route path="/TodoList" component={TodoList}></Route>
+          <Route path="/useEffectOp" component={useEffectOp}></Route>
+          <Route path="/HookGet" component={HookGet}></Route>
+          <Route path="/HookGet2" component={HookGet2}></Route>
+          <Route path="/ReactMemo" component={ReactMemo}></Route>
+          <Route path="/MemoChild" component={MemoChild}></Route>
+          <Route path="/useCallback" component={useCallback}></Route>
+          <Route path="/useReducer" component={useReducer}></Route>
+          <Route path="/useContextM" component={useContextM}></Route>
+          <Route path="/useContextC" component={useContextC}></Route>
+          <Route path="/contextType" component={contextType}></Route>
+          <Route path="/setState2" component={setState2}></Route>
         </Router>
         {/* 父传子 */}
         {/* <Lifecycle title={this.state.title} child2parent={this.child2parent}/>

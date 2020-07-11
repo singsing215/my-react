@@ -21,7 +21,6 @@ export default  class Nav extends React.Component {
 
       <div id="navbar">
         <header>
-          <div  className="container">
             <nav  className="navbar navbar-expand-lg navbar-light" id="nav">
               <NavLink exact to='/home'>Home</NavLink>
               <button  className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -45,7 +44,10 @@ export default  class Nav extends React.Component {
                   <NavLink exact to='/lifecycle'>lifecycle</NavLink>
                 </div>
                 <div  className="navbar-nav">
-                  <NavLink exact to='/setstate'>setstate</NavLink>
+                  <NavLink exact to='/setstate'>setState 1</NavLink>
+                </div>
+                <div  className="navbar-nav">
+                  <NavLink exact to='/setState2'>setState 2</NavLink>
                 </div>
                 <div  className="navbar-nav">
                   <NavLink exact to='/if'>if</NavLink>
@@ -83,9 +85,62 @@ export default  class Nav extends React.Component {
                 <div  className="navbar-nav">
                   <NavLink exact to='/post'>post</NavLink>
                 </div>
+                <div  className="navbar-nav">
+                  <NavLink exact to='/withRouter'>withRouter</NavLink>
+                </div>
+                <div  className="navbar-nav">
+                  <NavLink exact to='/prompt'>prompt</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useState'>useState 1</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useEffect'>useEffect 1</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useState2'>useState 2</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useEffect2'>useEffect 2</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/TodoForm'>TodoForm</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/TodoList'>TodoList</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useEffectOp'>useEffectOp</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/HookGet'>HookGet</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/HookGet2'>HookGet2</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/ReactMemo'>ReactMemo</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/MemoChild'>MemoChild</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useCallback'>useCallback</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useReducer'>useReducer</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useContextM'>useContextM</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/useContextC'>useContextC</NavLink>
+                </div>
+                <div className="navbar-nav">
+                  <NavLink exact to='/contextType'>contextType</NavLink>
+                </div>
               </div>
             </nav>
-          </div>
         </header>
       </div>
     )
